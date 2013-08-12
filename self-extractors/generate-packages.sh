@@ -25,12 +25,22 @@
 # 262866 = IMM30D
 # 299849 = IMM76D
 # end ics-mr1
-BRANCH=ics-mr1
+# start jb-dev
+# 405518 = JRO03H
+# 438695 = JRO03R
+# 485486 = JZO54K
+# end jb-dev
+BRANCH=jb-dev
 if test $BRANCH=ics-mr1
 then
   ZIP=tervigon-ota-299849.zip
   BUILD=imm76d
 fi # ics-mr1
+if test $BRANCH=jb-dev
+then
+  ZIP=tervigon-ota-485486.zip
+  BUILD=jzo54k
+fi # jb-dev
 ROOTDEVICE=stingray
 DEVICE=wingray
 MANUFACTURER=moto
